@@ -168,7 +168,7 @@
 
 @layer components {
   /* ---------- Layout ---------- */
-  .container {
+  .shell {
     width: min(1200px, 92%);
     margin-inline: auto;
   }
@@ -1504,7 +1504,6 @@
   }
 
   .hero-media {
-    order: -1;
     padding: 0;
   }
 
@@ -1531,7 +1530,12 @@
 /* ---------- Mobile ---------- */
 @media (max-width: 760px) {
   .section {
-    padding: 60px 0;
+    padding: 44px 0;
+  }
+
+  .section-head {
+    margin-bottom: 26px;
+    gap: 12px;
   }
 
   .menu-toggle {
@@ -1569,6 +1573,18 @@
     gap: 12px;
   }
 
+  .logo {
+    font-size: 1.05rem;
+    gap: 9px;
+  }
+
+  .logo-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
   .grid,
   .features,
   .about-grid,
@@ -1576,44 +1592,255 @@
     grid-template-columns: 1fr;
   }
 
+  /* ---- Hero ---- */
   .hero {
-    padding-top: 36px;
+    padding-top: 26px;
   }
 
   .hero-grid {
-    gap: 28px;
-    padding-bottom: 48px;
+    gap: 26px;
+    padding-bottom: 36px;
+  }
+
+  .hero-chips {
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 9.5vw, 3.2rem);
   }
 
   .hero h1 .hl {
     -webkit-text-stroke-width: 2px;
+    text-shadow: 4px 4px 0 rgba(5, 10, 53, 0.18);
+  }
+
+  .hero-sub {
+    margin: 16px 0 22px;
+    font-size: 0.94rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-actions .btn-ghost {
+    box-shadow: none;
+  }
+
+  .hero-stats {
+    gap: 16px 22px;
+    margin-top: 26px;
+    padding-top: 18px;
+  }
+
+  .hero-stats strong {
+    font-size: 1.3rem;
+  }
+
+  .hero-stats span {
+    font-size: 0.62rem;
+  }
+
+  .hero-photo {
+    width: min(100%, 300px);
+    border-width: 5px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 var(--blue);
+  }
+
+  .hero-tape {
+    right: 0;
+    bottom: 12%;
+    font-size: 0.85rem;
+    padding: 8px 14px;
   }
 
   .hero-badge {
-    width: 96px;
-    height: 96px;
-    font-size: 0.62rem;
-    left: 0;
-    bottom: 0;
+    width: 86px;
+    height: 86px;
+    font-size: 0.56rem;
+    left: -4px;
+    bottom: -4px;
   }
 
+  .checker {
+    height: 36px;
+    background-size: 36px 36px;
+    background-position: 0 0, 18px 18px;
+  }
+
+  .ticker {
+    padding: 9px 0;
+  }
+
+  .ticker-track {
+    font-size: 0.78rem;
+    gap: 22px;
+  }
+
+  .ticker-track span {
+    gap: 22px;
+  }
+
+  /* ---- Statement ---- */
   .statement {
-    padding: 60px 0;
+    padding: 44px 0;
   }
 
   .statement .script {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
+  }
+
+  .statement p {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    box-shadow: 5px 5px 0 var(--blue);
+  }
+
+  .card-photo {
+    height: 175px;
+  }
+
+  .card-body {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .card-body h3 {
+    font-size: 1.25rem;
+  }
+
+  .card-desc {
+    min-height: 0;
+    font-size: 0.86rem;
+  }
+
+  .feature {
+    padding: 20px;
+    box-shadow: 5px 5px 0 var(--yellow);
+  }
+
+  .about-block {
+    box-shadow: 5px 5px 0 var(--blue);
+    padding: 22px;
+  }
+
+  .story-card,
+  .contact-info {
+    padding: 22px;
+    box-shadow: 7px 7px 0 var(--yellow);
+  }
+
+  .contact-form {
+    padding: 22px;
+    box-shadow: 7px 7px 0 var(--blue);
   }
 
   .deal {
     transform: none;
     max-width: 100%;
+    box-shadow: 8px 8px 0 var(--navy);
+    padding: 30px 20px 22px;
   }
 
-  .contact-form,
-  .contact-info,
-  .story-card {
-    padding: 22px;
+  .deal-layout {
+    gap: 34px;
+  }
+
+  /* ---- Page headers / bands ---- */
+  .page-head {
+    padding: 36px 0 30px;
+  }
+
+  .page-head .script {
+    font-size: 1.7rem;
+  }
+
+  .page-head h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .page-head p {
+    margin-top: 8px;
+    font-size: 0.92rem;
+  }
+
+  .cta-band {
+    padding: 50px 0;
+  }
+
+  .cta-band h2 {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  .cta-band p {
+    font-size: 0.92rem;
+    margin-bottom: 22px;
+  }
+
+  .search {
+    padding: 13px 18px;
+    margin: 20px 0 14px;
+    font-size: 0.95rem;
+  }
+
+  .filter {
+    padding: 8px 15px;
+    font-size: 0.68rem;
+  }
+
+  .filters {
+    margin-bottom: 26px;
+  }
+
+  .btn {
+    padding: 13px 22px;
+    font-size: 0.78rem;
+  }
+
+  .btn-lg {
+    padding: 15px 26px;
+    font-size: 0.82rem;
+  }
+
+  .footer {
+    padding: 40px 0 22px;
+  }
+
+  .footer-bottom {
+    margin-top: 28px;
+  }
+
+  .cart-drawer {
+    width: 100%;
+    border-left: 0;
+  }
+
+  .cart-body {
+    padding: 14px 16px;
+  }
+
+  .cart-item {
+    grid-template-columns: 58px 1fr auto;
+    gap: 10px;
+    padding: 9px;
+  }
+
+  .cart-item img {
+    width: 58px;
+    height: 58px;
   }
 }
 

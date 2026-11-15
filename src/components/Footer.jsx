@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin } from 'lucide-react'
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="shell">
         <div className="footer-grid">
           <div>
             <span className="logo">

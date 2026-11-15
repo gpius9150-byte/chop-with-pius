@@ -25,7 +25,7 @@ function Home({ onAddToCart }) {
     <>
       {/* ---------- Hero ---------- */}
       <section className="hero">
-        <div className="container hero-grid">
+        <div className="shell hero-grid">
           <div>
             <div className="hero-chips">
               <span className="chip">Fresh</span>
@@ -108,7 +108,7 @@ function Home({ onAddToCart }) {
 
       {/* ---------- Statement ---------- */}
       <section className="statement">
-        <div className="container">
+        <div className="shell">
           <span className="script">Chop with Pius</span>
           <p>
             Started from a simple idea: make <em>healthy, delicious</em> Nigerian
@@ -124,7 +124,7 @@ function Home({ onAddToCart }) {
 
       {/* ---------- Favourites ---------- */}
       <section className="section">
-        <div className="container">
+        <div className="shell">
           <div className="section-head">
             <div>
               <span className="kicker">Ready to eat</span>
@@ -152,7 +152,7 @@ function Home({ onAddToCart }) {
 
       {/* ---------- Deal + features ---------- */}
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
+        <div className="shell">
           <div className="deal-layout">
             <div className="deal">
               <span className="deal-clip" />
@@ -207,7 +207,7 @@ function Home({ onAddToCart }) {
 
       {/* ---------- CTA ---------- */}
       <section className="cta-band">
-        <div className="container">
+        <div className="shell">
           <Clock size={28} style={{ margin: '0 auto 14px', color: '#ffd60a' }} />
           <h2>Hungry? We are already cooking</h2>
           <p>

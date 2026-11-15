@@ -48,7 +48,7 @@ function Contact() {
   return (
     <>
       <header className="page-head">
-        <div className="container">
+        <div className="shell">
           <span className="script">We reply fast</span>
           <h1>Contact us</h1>
           <p>
@@ -59,7 +59,7 @@ function Contact() {
       </header>
 
       <section className="section">
-        <div className="container contact-layout">
+        <div className="shell contact-layout">
           <div className="contact-info">
             <h2>Get in touch</h2>
             <p>

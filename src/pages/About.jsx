@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <header className="page-head">
-        <div className="container">
+        <div className="shell">
           <span className="script">Since day one</span>
           <h1>About us</h1>
           <p>
@@ -16,7 +16,7 @@ function About() {
       </header>
 
       <section className="section">
-        <div className="container story">
+        <div className="shell story">
           <div className="story-card">
             <h2>Our story</h2>
             <p>
@@ -53,7 +53,7 @@ function About() {
       </section>
 
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
+        <div className="shell">
           <div className="section-head">
             <div>
               <span className="kicker">What drives us</span>
@@ -82,7 +82,7 @@ function About() {
       </section>
 
       <section className="cta-band">
-        <div className="container">
+        <div className="shell">
           <Leaf size={28} style={{ margin: '0 auto 14px', color: '#ffd60a' }} />
           <h2>Made fresh. Served hot.</h2>
           <p>Come chop with us today — your next favourite plate is one tap away.</p>

@@ -18,7 +18,7 @@ function Menu({ onAddToCart }) {
   return (
     <>
       <header className="page-head">
-        <div className="container">
+        <div className="shell">
           <span className="script">Something for every appetite</span>
           <h1>Our menu</h1>
           <p>
@@ -29,7 +29,7 @@ function Menu({ onAddToCart }) {
       </header>
 
       <section className="section">
-        <div className="container">
+        <div className="shell">
           <input
             type="search"
             className="search"

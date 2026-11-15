@@ -9,7 +9,7 @@ function Navbar({ cartCount, onCartOpen }) {
 
   return (
     <header className="navbar">
-      <div className="container navbar-inner">
+      <div className="shell navbar-inner">
         <NavLink to="/" className="logo" onClick={closeMenu}>
           <span className="logo-mark">CP</span>
           Chop with Pius
